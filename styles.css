@@ -1,0 +1,266 @@
+:root {
+  --primary-pink: hsl(322, 100%, 66%);
+  --vpale-cyan: hsl(193, 100%, 96%);
+  --vdark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+  --font-md: 1.125rem;
+  --poppins: 'Poppins', sans-serif;
+  --open-sans: 'Open Sans', sans-serif;
+}
+
+/* box sizing */
+*, html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* CSS custom libraries */
+.poppins {
+  font-family: var(--poppins);
+}
+
+.opensans {
+  font-family: var(--open-sans);
+}
+
+.width-100-percentage {
+  width: 100%;
+}
+
+.width-70-percentage {
+  width: 70%;
+}
+
+.responsive-flex-item {
+  width: 30%;
+  flex: 0 1 auto;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  width: 80%;
+  border-radius: 10px;
+  margin: 15% auto;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 10%);
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  padding: 3px 0;
+  font-weight: 600;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.pink-btn {
+  width: 70%;
+  background-color: var(--primary-pink);
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+.padding-10-percent {
+  padding: 10%;
+}
+
+.padding-5-percent {
+  padding: 5%;
+}
+
+.extra-space-top-bottom {
+  margin: 15px 0;
+}
+
+.extra-space-right-left {
+  margin: 0 15px;
+}
+
+.color-gray {
+  color: var(--grayish-blue);
+}
+
+/* Navbar Section */
+.navbar {
+  background-image: url("images/bg-hero-mobile.svg");
+  background-color: var(--vpale-cyan);
+}
+
+/* All headings */
+.title {
+  font-size: 18px;
+}
+
+.floating-prompt {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  height: 150px;
+  position: absolute;
+  margin: 5%;
+  top: -15%;
+}
+
+/* Footer Section */
+.footer {
+  position: relative;
+  background-color: var(--vdark-cyan);
+  color: #fff;
+  text-align: start;
+  padding: 20% 5%;
+  margin: 40% 0 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.items {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.about-us {
+  margin: 30px 0;
+}
+
+.footer-logo {
+  width: 50%;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.icon {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  margin: 0 5px;
+}
+
+.copyright {
+  margin-top: 15%;
+}
+
+/* For Responsiveness */
+@media screen and (min-width:600px) {
+  body {
+    text-align: start;
+  }
+
+  /* navbar section */
+  .navbar {
+    background-image: url("images/bg-hero-desktop.svg");
+  }
+
+  .navbar-container {
+    padding: 5% 5% 0;
+  }
+
+  .brand-logo, .navbar-button {
+    width: 15%;
+  }
+
+  .tryit-btn {
+    padding: 10px;
+  }
+
+  /* Heading Section */
+  .heading-section {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 30px;
+  }
+
+  .heading-text,
+  .heading-image,
+  .image,
+  .description {
+    width: 50%;
+    flex: 0 1 auto;
+  }
+
+  .heading-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-right: 15%;
+  }
+
+  .heading-title {
+    font-size: 45px;
+  }
+
+  .heading-btn {
+    width: 60%;
+    padding: 20px;
+  }
+
+/* Grow-together , conversation , Your-users section */
+  .grow-together, .conversation, .users {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 40px;
+  }
+
+  .grow-together {
+    margin: 5% auto 25px;
+  }
+
+  .conversation {
+    flex-direction: row-reverse;
+    margin: 25px auto;
+  }
+
+  .users {
+    margin: 0 auto 5%;
+  }
+
+  .description {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  /* Footer Section */
+  footer.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0 0;
+  }
+
+  .floating-prompt {
+    width: 60%;
+  }
+
+  .floating-prompt-btn {
+    width: 250px;
+    padding: 15px;
+  }
+
+  .address {
+    width: 35%;
+  }
+
+  .about-us, .other-pages, .social-media {
+    width: 21%;
+  }
+}
