@@ -257,6 +257,7 @@ html, body {
     justify-content: center;
     align-items: center;
     margin: 15% 0 0;
+    gap:20px;
   }
 
   .floating-prompt {
