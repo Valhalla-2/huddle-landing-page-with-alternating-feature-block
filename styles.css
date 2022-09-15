@@ -160,6 +160,10 @@ html, body {
   margin-top: 15%;
 }
 
+.copyright a {
+  color: #fff;
+}
+
 /* Hover states */
 .tryit-btn:hover {
   cursor: pointer;
@@ -170,6 +174,8 @@ html, body {
   cursor: pointer;
   background-color: rgba(255, 82, 191, 0.8);
 }
+
+
 
 /* For Responsiveness */
 @media screen and (min-width:600px) {
